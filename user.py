@@ -5,11 +5,13 @@ def loginUser():
     username = input("Masukkan username: ")
     if username in userData:
         password = input("Masukkan password: ")
-        if password in userData:
+        p = len(userData["user1"])
+        if password in userData["user1"] and len(password) == p:
             print("Login berhasil")
         else:
             print("Password salah")
     else:
-        ("User tidak ada di database")
+        print("User tidak ada di database")
 def userDashboard():
     pass
+loginUser()
