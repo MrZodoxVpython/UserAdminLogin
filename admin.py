@@ -14,4 +14,3 @@ def loginAdmin():
         print("Username tidak ada di database")
 def adminDashboard():
     pass
-loginAdmin()
