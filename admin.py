@@ -8,9 +8,11 @@ def loginAdmin():
         p = len(adminData[username])
         if password in adminData[username] and len(password) == p:
             print("Login berhasil")
+            return True
         else:
             print("Password salah")
+            return False
     else:
         print("Username tidak ada di database")
 def adminDashboard():
-    pass
+    print("Welcome to admin dashboard")
