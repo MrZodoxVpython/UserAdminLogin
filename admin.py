@@ -5,7 +5,8 @@ def loginAdmin():
     username = input("Masukkan username: ")
     if username in adminData:
         password = input("Masukkan password: ")
-        if password in adminData:
+        p = len(adminData[username])
+        if password in adminData[username] and len(password) == p:
             print("Login berhasil")
         else:
             print("Password salah")
@@ -13,3 +14,4 @@ def loginAdmin():
         print("Username tidak ada di database")
 def adminDashboard():
     pass
+loginAdmin()
