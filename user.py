@@ -5,8 +5,8 @@ def loginUser():
     username = input("Masukkan username: ")
     if username in userData:
         password = input("Masukkan password: ")
-        p = len(userData["user1"])
-        if password in userData["user1"] and len(password) == p:
+        p = len(userData[username])
+        if password in userData[username] and len(password) == p:
             print("Login berhasil")
         else:
             print("Password salah")
